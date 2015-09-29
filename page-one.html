@@ -1,0 +1,20 @@
+<div ng-controller='PageOneCtrl' class="container">
+    <h2>List One</h2>
+
+    <form>
+        <div class="inputnbutton">
+            <input type="text" ng-model="enteredTask" placeholder="Enter Task">
+            <!--<br>-->
+            <button ng-click="addTask()" class="myButton">Add</button>
+        </div>
+
+    </form>
+    <ul class="ullist">
+        <li class="lilist" ng-repeat="task in tasks track by $index">
+            <span class="task">{{task}}</span>
+            <i href="" ng-click="removeTask(task)" class="fa fa-trash-o"></i>
+
+        </li>
+    </ul>
+
+</div>

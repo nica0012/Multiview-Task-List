@@ -76,10 +76,10 @@ nav ul li a {
 
 .task {
     float: left;
-/*    margin-left: 2rem;*/
+    /*    margin-left: 2rem;*/
 }
-.ullist{
 
+.ullist {
     list-style-type: none;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -89,26 +89,28 @@ nav ul li a {
     padding-bottom: 45px;
     margin: 10px;
     margin-top: 25px;
+    max-width: 600px;
+    margin-bottom: 1rem;
+    text-align: center;
     
+        margin: 0 auto;
+
 }
-.lilist{
- border-bottom: 1px solid rgba(255, 255, 255, 0.26);
+
+.lilist {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.26);
     padding-top: 20px;
     padding-bottom: 23px;
     width: 100%;
     transition: .1s;
-
-/*    font-size: 17px;*/
-
+    /*    font-size: 17px;*/
 }
-
 
 i {
     float: right;
     transition: .1s;
     font-size: 50px;
-/*        margin-right: 2rem;*/
-
+    /*        margin-right: 2rem;*/
 }
 
 i:hover {
@@ -127,7 +129,6 @@ input {
     */
 }
 
-
 button {
     padding: 12px;
     /*    width: 20%;*/
@@ -136,18 +137,33 @@ button {
 }
 
 form {
+    max-width: 300px;
+    text-align: center;
     padding: 15px;
     /*    margin-bottom: 6rem;
     */
     /*    margin: 0 auto;
     */
-    margin: 12px;
-        border: 2px solid #ccc;
-
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
     background-color: #1c1c1c;
 }
 
 .inputnbutton {
     margin: 0 auto;
     text-align: center;
+}
+
+@media (max-width: 550px) {
+.ullist {
+    
+    max-width: 380px;
+    margin-bottom: 1rem;
+    text-align: center;
+    
+        margin: 0 auto;
+
+}
+    
 }
